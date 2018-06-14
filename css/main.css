@@ -16,6 +16,16 @@ h2{
     font-size: 60px;
 }
 
+.aboutme-text{
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+p{
+    font-size:18px;
+    font-family: 'Quicksand', sans-serif;
+}
+
 .card-title{
     font-family: 'Dancing Script', cursive;
     font-weight: bolder;
@@ -40,12 +50,11 @@ nav{
 }
 
 footer{
-    height: 60px;
+    height: 45px;
     background-color: black;
     text-align: center;
-    color: white;
-    font-weight: bolder;
-    padding: 1.5em;
+    color: rgb(121, 121, 121);
+    padding: 1em;
 }
 
 .opaque{
@@ -56,11 +65,15 @@ footer{
 section img{
     border-radius: 10%;
     margin-top: 5em;
+    margin-bottom: 2em;
     max-width: 100%;
+    transform: scale(1);
+    transition: transform 0.5s;
 }
 
 section img:hover{
-    opacity: .7;
+    transform: scale(1.1);
+    transition: transform 0.5s;
 }
 
 .burger {
@@ -98,6 +111,7 @@ section img:hover{
     display:inline-block;
     height:56px;
     padding:20px 10px;
+    cursor: pointer;
  }
  .menu a {
     color: #CCC;
@@ -105,10 +119,11 @@ section img:hover{
  }
  .menu a:hover {
     color:#fff;
+    cursor: pointer;
  }
 
  .first-section{
-    margin-top: 5em;
+    margin-top: 2em;
  }
 
  #aboutme {
@@ -127,11 +142,13 @@ section img:hover{
      text-decoration: none;
      background: none;
      font-weight: bold;
+     cursor: pointer;
  }
 
  .read-more:hover{
      background-color: black;
-     color: #fff;
+     color: white;
      font-weight: bold;
      border-radius: 15px;
+     cursor: pointer;
  }
